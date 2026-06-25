@@ -14,7 +14,7 @@ font-family:Tahoma,sans-serif;
 }
 
 body{
-background:#fff;
+background:#f5f7fb;
 color:#111;
 }
 
@@ -23,11 +23,11 @@ header{
 background:#000;
 color:white;
 text-align:center;
-padding:120px 20px;
+padding:140px 20px;
 }
 
 header h1{
-font-size:65px;
+font-size:70px;
 }
 
 header p{
@@ -38,10 +38,10 @@ margin:auto;
 line-height:1.8;
 }
 
-/* زر واحد */
+/* ⭐ زر واحد فقط */
 .btn{
 display:inline-block;
-margin-top:30px;
+margin-top:35px;
 padding:18px 45px;
 background:#25D366;
 color:white;
@@ -53,8 +53,8 @@ font-size:18px;
 
 /* الأقسام */
 section{
-padding:80px 20px;
-max-width:1100px;
+padding:70px 20px;
+max-width:1000px;
 margin:auto;
 }
 
@@ -64,8 +64,8 @@ font-size:38px;
 margin-bottom:40px;
 }
 
-/* الخدمات */
-.services{
+/* كروت بسيطة */
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
@@ -74,44 +74,35 @@ gap:20px;
 .card{
 background:white;
 padding:25px;
-border-radius:18px;
+border-radius:15px;
 box-shadow:0 6px 20px rgba(0,0,0,.08);
 text-align:center;
 }
 
-/* الصور + النص تحتها (ده التعديل المهم 🔥) */
+/* أعمال */
+.project img{
+width:100%;
+border-radius:12px;
+}
+
 .project{
 background:white;
 border-radius:15px;
 overflow:hidden;
 box-shadow:0 6px 20px rgba(0,0,0,.08);
-text-align:center;
-}
-
-.project img{
-width:100%;
-display:block;
 }
 
 .project p{
-padding:15px;
-font-size:16px;
+padding:12px;
+text-align:center;
 }
 
-/* المشاريع */
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-}
-
-/* فوتر */
+/* footer */
 footer{
 background:#000;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:50px;
 }
 </style>
 </head>
@@ -120,32 +111,33 @@ margin-top:50px;
 
 <header>
 <h1>Vendo</h1>
-<p>نصمم مواقع احترافية تساعدك تبدأ مشروعك بشكل قوي على الإنترنت</p>
+<p>نصمم مواقع احترافية تساعدك تبدأ مشروعك وتكسب عملاء حقيقيين</p>
 
+<!-- ⭐ زر واحد فقط -->
 <a class="btn"
-href="https://wa.me/201036733858?text=مرحباً، أريد تصميم موقع احترافي"
+href="https://wa.me/201036733858?text=مرحباً، أريد تصميم موقع احترافي لمشروعي"
 target="_blank">
-ابدأ الآن
+تواصل معنا
 </a>
 </header>
 
 <section>
 <h2 class="title">خدماتنا</h2>
 
-<div class="services">
+<div class="grid">
 <div class="card">
 <h3>تصميم مواقع</h3>
-<p>مواقع حديثة وسريعة ومتجاوبة.</p>
+<p>مواقع حديثة وسريعة</p>
 </div>
 
 <div class="card">
 <h3>متاجر إلكترونية</h3>
-<p>بيع منتجاتك أونلاين بسهولة.</p>
+<p>بيع منتجاتك أونلاين</p>
 </div>
 
 <div class="card">
-<h3>صفحات هبوط</h3>
-<p>زيادة العملاء والمبيعات.</p>
+<h3>صفحات تسويق</h3>
+<p>زيادة العملاء بسرعة</p>
 </div>
 </div>
 </section>
@@ -153,11 +145,11 @@ target="_blank">
 <section>
 <h2 class="title">أعمالنا</h2>
 
-<div class="projects">
+<div class="grid">
 
 <div class="project">
 <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800">
-<p>موقع شركة احترافي</p>
+<p>موقع شركة</p>
 </div>
 
 <div class="project">
@@ -167,7 +159,7 @@ target="_blank">
 
 <div class="project">
 <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800">
-<p>صفحة تسويقية</p>
+<p>صفحة هبوط</p>
 </div>
 
 </div>
