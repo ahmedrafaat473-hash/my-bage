@@ -6,19 +6,28 @@
 <title>Vendo</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma,sans-serif;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
+}
 
-body{background:white;color:#111;}
+body{
+background:#fff;
+color:#111;
+}
 
+/* الهيدر */
 header{
 background:#000;
 color:white;
 text-align:center;
-padding:110px 20px;
+padding:120px 20px;
 }
 
 header h1{
-font-size:60px;
+font-size:65px;
 }
 
 header p{
@@ -26,37 +35,36 @@ margin-top:15px;
 color:#bbb;
 max-width:700px;
 margin:auto;
-line-height:1.7;
+line-height:1.8;
 }
 
+/* زر واحد */
 .btn{
 display:inline-block;
-margin-top:25px;
-padding:15px 35px;
-background:#2563eb;
+margin-top:30px;
+padding:18px 45px;
+background:#25D366;
 color:white;
 text-decoration:none;
 border-radius:50px;
 font-weight:bold;
-transition:.3s;
+font-size:18px;
 }
 
-.btn:hover{
-transform:scale(1.05);
-}
-
+/* الأقسام */
 section{
-padding:70px 20px;
+padding:80px 20px;
 max-width:1100px;
 margin:auto;
 }
 
 .title{
 text-align:center;
-font-size:34px;
+font-size:38px;
 margin-bottom:40px;
 }
 
+/* الخدمات */
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -66,39 +74,44 @@ gap:20px;
 .card{
 background:white;
 padding:25px;
-border-radius:15px;
-border:1px solid #eee;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-}
-
-.card h3{color:#2563eb;margin-bottom:10px;}
-
-.contact{
-background:#111;
-color:white;
-padding:60px;
+border-radius:18px;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
 text-align:center;
+}
+
+/* الصور + النص تحتها (ده التعديل المهم 🔥) */
+.project{
+background:white;
 border-radius:15px;
+overflow:hidden;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+text-align:center;
 }
 
-.whatsapp{
-display:inline-block;
-margin-top:20px;
-background:#25D366;
-color:white;
-padding:15px 35px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-font-size:18px;
+.project img{
+width:100%;
+display:block;
 }
 
+.project p{
+padding:15px;
+font-size:16px;
+}
+
+/* المشاريع */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+/* فوتر */
 footer{
+background:#000;
+color:white;
 text-align:center;
 padding:25px;
-background:#000;
-color:#fff;
-margin-top:40px;
+margin-top:50px;
 }
 </style>
 </head>
@@ -107,12 +120,12 @@ margin-top:40px;
 
 <header>
 <h1>Vendo</h1>
-<p>نصمم مواقع احترافية للشركات والمتاجر والأفراد</p>
+<p>نصمم مواقع احترافية تساعدك تبدأ مشروعك بشكل قوي على الإنترنت</p>
 
 <a class="btn"
 href="https://wa.me/201036733858?text=مرحباً، أريد تصميم موقع احترافي"
 target="_blank">
-تواصل معنا
+ابدأ الآن
 </a>
 </header>
 
@@ -120,22 +133,42 @@ target="_blank">
 <h2 class="title">خدماتنا</h2>
 
 <div class="services">
-<div class="card"><h3>تصميم مواقع</h3><p>مواقع حديثة وسريعة</p></div>
-<div class="card"><h3>متاجر إلكترونية</h3><p>بيع منتجاتك أونلاين</p></div>
-<div class="card"><h3>صفحات هبوط</h3><p>زيادة العملاء بسرعة</p></div>
+<div class="card">
+<h3>تصميم مواقع</h3>
+<p>مواقع حديثة وسريعة ومتجاوبة.</p>
+</div>
+
+<div class="card">
+<h3>متاجر إلكترونية</h3>
+<p>بيع منتجاتك أونلاين بسهولة.</p>
+</div>
+
+<div class="card">
+<h3>صفحات هبوط</h3>
+<p>زيادة العملاء والمبيعات.</p>
+</div>
 </div>
 </section>
 
 <section>
-<div class="contact">
-<h2>تواصل معنا الآن</h2>
-<p>اضغط الزر وسيتم فتح واتساب مباشرة 🔥</p>
+<h2 class="title">أعمالنا</h2>
 
-<a class="whatsapp"
-href="https://wa.me/201036733858?text=مرحباً، أحتاج تصميم موقع"
-target="_blank">
-راسلنا واتساب
-</a>
+<div class="projects">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800">
+<p>موقع شركة احترافي</p>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800">
+<p>متجر إلكتروني</p>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800">
+<p>صفحة تسويقية</p>
+</div>
 
 </div>
 </section>
