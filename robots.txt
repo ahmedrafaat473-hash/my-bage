@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmedrafaat473-hash.github.io/my-bage/sitemap.xml
